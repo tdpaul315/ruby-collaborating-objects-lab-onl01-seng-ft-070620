@@ -10,6 +10,10 @@ class Song
   def self.all 
     @@all 
   end 
+  
+  def self.find(name)
+    self.all.detect { |song| song.name == self }
+  end
 
   def self.new_by_filename(file)
     artist_name = file.split(" - ")[0]
