@@ -11,7 +11,7 @@ class Song
     @@all 
   end 
   
-  def self.find(name)
+  def self.find(song)
     self.all.detect { |song| song.name == self }
   end
 
